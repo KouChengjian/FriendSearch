@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name">友搜</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_tab_location">定位</string>
+    <string name="main_tab_contact">联系人</string>
+    <string name="mian_tab_nearby">附近</string>
+    
+    
+    <string name="empty" />
+    
+    <string name="menu_setting">设 置</string>
+    <string name="menu_login">登 入</string>
+    <string name="menu_exit">退 出</string>
+    <string name="menu_feedback">反 馈</string>
+    <string name="menu_mapline">离线地图</string>
+    <string name="menu_update">更 新</string>
+    <string name="menu_other"  >其他</string>
+    <string name="map"    >朋友地图</string>
+    <string name="menu_allow">当前允许</string>
+    <string name="menu_forbid">当前禁止</string>
+    
+    <string name="message_search_hint">搜索&#8230;</string>
+    <!-- 地图 -->
+    <string name="et_search">公交搜索</string>
+    
+    <string name="login_username_hint">请输入账号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login">登录</string>
+    
+    <string name="add_avator">头像</string>
+    <string name="tips">提示</string>
+    
+    <string name="login_account">账号 </string>
+    <string name="login_pwd">密码 </string>
+    <string name="register">注册</string>
+    <string name="login_email_hint">请在此输入密码&#8230;</string>
+    <string name="login_email">确认密码 </string>
+    <string name="register_txt1">还没有账号？</string>
+    <string name="register_txt2">立即注册 </string>
+    <string name="toast_error_nick_null">昵称不能为空</string>
+    <string name="toast_error_password_null">密码不能为空</string>
+    <string name="toast_error_username_null">用户名不能为空</string>
+    <string name="network_tips">当前网络不可用,请检查您的网络!</string>
+    <string name="toast_error_comfirm_password">输入的两次密码不一致</string>
+    
+    <string name="tv_nearby">附近</string>
+    <string name="tv_go">路线</string>
+    <string name="tv_my">我的</string>
+    <string name="tv_box">工具</string>
+    
+    <string name="username">用户名</string>
+    <string name="search">搜索</string>
+    
+    <string name="new_friends">新朋友</string>
+    
+    <string name="near_people">附近的人</string>
+    
+    <string name="register_nick">昵称</string>
+    <string name="register_nike_hink">请输入昵称</string>
+    <string name="register_account_hink">请输入手机号码</string>
+    <string name="register_password_hink">请输入密码</string>
+    <string name="register_affirm_hink">确认密码</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="pop_photo">拍照</string>
+    <string name="pop_choose">从手机相册选中</string>
+</resources>

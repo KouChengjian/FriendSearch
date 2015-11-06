@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_all"
+    android:background="@color/tools_box_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.kcj.friendsearch.view.RoundedImageView
+            android:id="@+id/headImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.0dip"
+            android:adjustViewBounds="true"
+            android:maxHeight="80dip"
+            android:maxWidth="80dip"
+            android:src="@drawable/head_default_local" />
+
+        <TextView
+            android:id="@+id/nickNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10.0dip"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/yixinCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="6.0dip"
+            android:textColor="#ffa8a8a3"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/tool_box_fragment_bg_selector" >
+
+        <TextView
+            android:id="@+id/txt_menu_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21.0dip"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/menu_login"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/menu_fragment_login_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" 
+        android:background="@drawable/tool_box_fragment_bg_selector">
+
+        <TextView
+            android:id="@+id/txt_menu_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21.0dip"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/menu_feedback"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/menu_fragment_feedback_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mapline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" 
+        android:background="@drawable/tool_box_fragment_bg_selector"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_menu_mapline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21.0dip"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/menu_mapline"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu_mapline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/menu_fragment_update_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_other"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" 
+        android:background="@drawable/tool_box_fragment_bg_selector">
+
+        <TextView
+            android:id="@+id/txt_menu_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21.0dip"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/menu_update"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/menu_fragment_update_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/tool_box_fragment_bg_selector" >
+
+        <TextView
+            android:id="@+id/txt_menu_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21.0dip"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/menu_allow"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/menu_fragment_allow_icon" />
+    </RelativeLayout>
+    
+   <RelativeLayout
+        android:id="@+id/rl_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/tool_box_fragment_bg_selector" >
+
+        <TextView
+            android:id="@+id/txt_menu_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21.0dip"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/menu_exit"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/menu_fragment_exit_icon" />
+    </RelativeLayout>
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.3299866dip"
+            android:background="#ff1c1c1b" />
+    <TextView
+        android:id="@+id/tet_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="70.0dip"
+        android:background="@drawable/tools_box_invite_btn_selector"
+        android:gravity="center"
+        android:text="@string/menu_exit"
+        android:textColor="#ff999994"
+        android:textSize="12.0sp"
+        android:visibility="gone" />
+
+</LinearLayout>

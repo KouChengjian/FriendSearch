@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_road"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.8"
+            android:background="@drawable/road"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_icon_roadcondition_off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_road"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.7"
+            android:background="@drawable/road"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_icon_maplayers" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_map_c"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_map"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/map"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/map_mode_plain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/main_map_mode_plain_normal" />
+
+            <ImageView
+                android:id="@+id/map_mode_satellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/main_map_mode_satellite_normal" />
+
+            <ImageView
+                android:id="@+id/map_mode_3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/main_map_mode_3d_normal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rect_gray"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/main_icon_zoomin"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="33dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:background="#F0F0F0"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/main_icon_zoomout"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- 我的位置 -->
+
+        <LinearLayout
+            android:id="@+id/layout_mylocation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="65dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/rect_gray"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/main_icon_location" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_showinfo" >
+
+            <!-- 长宽可自定义,但是设置的过大,会保持原位 -->
+            <!-- align要自己設，靠一边 -->
+
+            <com.kcj.friendsearch.view.ComposerLayout
+                android:id="@+id/test"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+            </com.kcj.friendsearch.view.ComposerLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_showinfo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true" 
+            android:layout_marginBottom="5dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/ll_showinfo_tradepage"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_showinfo_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/map_show_background"
+                        android:drawableTop="@drawable/btn_showinfo_left"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="2dip"
+                        android:scaleType="matrix" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_showinfo_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/map_show_background"
+                        android:drawableTop="@drawable/btn_showinfo_right"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="2dip"
+                        android:scaleType="matrix" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_showinfo_content"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true">
+                <LinearLayout
+                    android:id="@+id/ll_showinfo_content_left"
+                    android:layout_width="55dp"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/btn_showinfo_content_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/map_show_background"
+                        android:drawableTop="@drawable/map_show_background_left"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="25dip"
+                        android:scaleType="matrix" />
+                </LinearLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/ll_showinfo_content_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="#ffffff"
+                    android:layout_toLeftOf="@+id/ll_showinfo_content_right"
+                    android:layout_toRightOf="@+id/ll_showinfo_content_left" >
+
+                    <TextView
+                        android:id="@+id/tv_showinfo_content_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toLeftOf="@+id/btn_showinfo_content_text_route"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btn_showinfo_content_text_route"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/map_show_background"
+                        android:drawableTop="@drawable/location_result_go"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="25dip"
+                        android:scaleType="matrix" />
+
+                    <TextView
+                        android:id="@+id/tv_showinfo_content_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_below="@+id/tv_showinfo_content_text"
+                        android:layout_toLeftOf="@+id/btn_showinfo_content_text_route"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_showinfo_content_right"
+                    android:layout_width="55dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/btn_showinfo_content_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/map_show_background"
+                        android:drawableTop="@drawable/map_show_background_right"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="25dip"
+                        android:scaleType="matrix" />
+                </LinearLayout>
+                
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
